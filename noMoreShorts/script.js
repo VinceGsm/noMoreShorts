@@ -11,4 +11,4 @@ function clean() {
       throw new Error(message, {cause : error});
     }
 }
-//clean();
+clean();
