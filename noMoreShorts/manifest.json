@@ -1,0 +1,24 @@
+{
+  "name": "NoMoreShorts",
+  "version": "1.0.0",
+  "description": "remove shorts from subscriptions",
+  "manifest_version": 3,
+  "author": "VinceGsm",
+  "permissions": [ "scripting" ],
+  "background": {
+    "service_worker": "script.js"
+  },
+  "icons": {
+    "42": "images/NoMoreShorts.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "script.js"
+      ],
+      "matches": [
+        "https://www.youtube.com/feed/subscriptions/*"
+      ]
+    }
+  ]
+}
